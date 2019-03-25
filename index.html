@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+    <script language="javascript" src="libraries/p5.dom.js"></script>
+    <script language="javascript" src="libraries/p5.sound.js"></script>
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <link rel="stylesheet" href="styl.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="libraries/parallax.min.js"></script>
+
+
+    <title>Niesamowita platforma testowa</title>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <h1>U L T R A  M E M E</h1>
+            <h2>by Elkolorado</h2>
+            <!-- <input value="125126137138" id="txt" size="50"></textarea>
+            <p><button id="submit">submit</button></p>
+            <p id = "output"></p> -->
+            <input type="text" id="myText" size="50" value="" placeholder="w p i s z  t u  s w ó j  t e k s t"></textarea>
+                        <!-- <input type="text" id="myText" value="Mickey"> -->
+                        <button class="button" class onclick="myFunction()">g e n e r u j</button>
+            <!-- <a href="" class="button" class onclick="myFunciton()">Progress</a> -->
+
+        </div>
+    </header>
+
+
+
+    <!--smooth scroll  -->
+    <script>
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 500, function() {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
+    </script>
+
+</body>
+
+</html>
