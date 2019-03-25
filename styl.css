@@ -16,7 +16,7 @@ body {
 
 .header {
   min-height: 100vh;
-  padding-top:  250px;
+  padding-top:  80px;
   padding-bottom: 250px;
   background: url('pobrane.jpg') center/cover no-repeat;
   text-shadow: 0 0 15px rgba (0, 0, 0, .3);
@@ -42,7 +42,7 @@ body {
     font-weight: bold;
     text-shadow: text-align: right;
     align-items: right;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 /*.header p {
     color: #2f2f2f;
@@ -64,7 +64,7 @@ body {
     margin-top: 20px;
     background: transparent;
     position: fixed;
-    top: 53%;
+    top: 31%;
     left: 50%;
     transform: translateX(-50%);
     }
@@ -82,12 +82,13 @@ input {
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  color: white;
+
   border: white 1px solid;
   padding: 5px 30px;
   border-radius: 5px;
   margin-top: 20px;
-  background: transparent;
+  background: black;
+  color: white;
 }
 
 input:focus {
