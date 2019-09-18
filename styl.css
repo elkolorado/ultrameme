@@ -79,23 +79,6 @@ body {
 }
 
 
-button.button2 {
-  font-size: 18px;
-  text-decoration: none;
-  color: white;
-  border: white 1px solid;
-  padding: 5px 30px;
-  border-radius: 5px;
-  margin-top: 20px;
-  background: transparent;
-  position: fixed;
-  top: 51%;
-  left: 50%;
-  transform: translateX(-50%);
-    }
-
-
-
 .button2:hover {
     background: black;
     color: white;
