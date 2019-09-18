@@ -63,13 +63,40 @@ body {
     border-radius: 5px;
     margin-top: 20px;
     background: transparent;
-    position: fixed;
-    top: 31%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     }
 
+
+
+
 .button:hover {
+    background: black;
+    color: white;
+    outline:0;
+}
+
+
+button.button2 {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  border: white 1px solid;
+  padding: 5px 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background: transparent;
+  position: fixed;
+  top: 51%;
+  left: 50%;
+  transform: translateX(-50%);
+    }
+
+
+
+.button2:hover {
     background: black;
     color: white;
     outline:0;
@@ -97,7 +124,7 @@ input:focus {
   color: white;
 }
 
-.section button.button2, button.button2:visited {
+/* .section button.button2, button.button2:visited {
     font-size: 18px;
     text-decoration: none;
     color: black;
@@ -123,12 +150,13 @@ input:focus {
     border-radius: 0
     /* background: black; */
 
-}
-.section button.button3:hover {
-    background: black;
-    color: white;
-        border: gray 1px solid;
-}
+  /* }
+  .section button.button3:hover {
+      background: black;
+      color: white;
+          border: gray 1px solid;
+  }  */
+
 
 td {
     height: 10px;
@@ -179,6 +207,11 @@ td {
   padding-left: 15px;
   padding-right: 15px;
 
+}
+
+.flex {
+  display: flex;
+justify-content: center;
 }
 
 
