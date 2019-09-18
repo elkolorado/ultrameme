@@ -18,15 +18,28 @@ inputElement.blur();
 }
 
 
-String.prototype.toRandomCase = function() {
-    return this.split('').map(function(c){
-        return c[Math.round(Math.random())?'toUpperCase':'toLowerCase']();
-    }).join('');
+function toWeirdCase(string) {
+  var reg = /\b(?![\s.])/
+  var res = string.split(reg)
+  var newArr = []
+
+  for (let k = 0; k < res.length; k++) {
+    let newString = "";
+    for (let j = 0; j < res[k].length; j++) {
+      if (j % 2 == 0) {
+        newString += res[k].charAt(j).toUpperCase()
+      } else {
+        newString += res[k].charAt(j).toLowerCase()
+      }
+    }
+    newArr.push(newString)
+  }
+  return newArr.join('')
 }
 
 
 function myFunction2(inputElement) {
-  document.getElementById("myText").value = ((document.getElementById("myText").value).toRandomCase());
+  document.getElementById("myText").value = ((document.getElementById("myText").value).toWeirdCase());
 
 
 
